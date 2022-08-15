@@ -1,4 +1,4 @@
-import md5 from '_utils/md5'
+import md5 from '../../_utils/md5'
 import styles from './gravatar.module.css'
 
 const Gravatar = ({ user, hash, scale = 1, size = 80 }) => {
