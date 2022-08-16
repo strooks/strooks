@@ -3,8 +3,6 @@ import styles from './gravatar.module.css'
 
 /* prettier-ignore */
 
-console.log(md5)
-
 const Gravatar = ({ user, hash, scale = 1, size = 80 }) => {
   hash = hash || md5(user.email || '')
   const src = `https://gravatar.com/avatar/${hash}?s=${size || 320}`
