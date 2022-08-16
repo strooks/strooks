@@ -60,6 +60,8 @@
 
 .flex {
   display: flex; flex-wrap: wrap;
+  &.items-3 { >* { width: 30% } }
+  
   &.f3 { > * { flex: 1 0 33%; min-width: 33% } }
   &.row { flex-direction: row; }
   &.column { flex-direction: column; }
@@ -74,7 +76,6 @@
   &.a-end { align-items: flex-end; }
   &.wrap { flex-wrap:wrap; }
   &.no-wrap { flex-wrap:nowrap; }
-  &.items-3 { >* { width: 30% } }
 }
 
 // margins and paddings
