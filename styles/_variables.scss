@@ -28,10 +28,10 @@ $screen: 1200px;
   --padding-1: 1.2rem;
 }
 
-body.dark-theme .dashboard-layout {
+body.dark-theme {
   --color-white: #181a1e;
   --color-dark: #edeffd;
   --color-dark-variant: #a3bdcc;
   --color-light: rgba(0, 0, 0, 0.4);
-  --box-shadow: 0 1rem 2rem var(--color-light);
+  // --box-shadow: 0 1rem 2rem var(--color-light);
 }
