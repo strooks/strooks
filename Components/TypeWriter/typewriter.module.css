@@ -17,10 +17,6 @@
   left: 0;
 }
 
-.before {
-  /* animation: typewriter 4s steps(14) 0.5s forwards; */
-}
-
 .after {
   width: 0.125rem;
   background-color: black;
