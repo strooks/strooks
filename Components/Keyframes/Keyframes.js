@@ -1,4 +1,15 @@
-const Keyframes = props => {
+import { useState, useEffect } from 'react'
+
+const Keyframes = ({ id, ...props }) => {
+  const [render, setRender] = useState(false)
+
+  useEffect(() => {
+    const ss = document.getElementById(id)
+    if (!ss) setRender(true)
+  }, [id])
+
+  if (!render) return false
+
   const toCss = cssObject =>
     typeof cssObject === 'string'
       ? cssObject
@@ -9,7 +20,7 @@ const Keyframes = props => {
         }, '')
 
   return (
-    <style>
+    <style id={id}>
       {`@keyframes ${props.name} {
         ${Object.keys(props)
           .map(key => {

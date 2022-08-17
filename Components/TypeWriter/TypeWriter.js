@@ -33,8 +33,17 @@ const TypeWriter = ({ text, seconds = 3, fontSize = 'inherit', delay = 0, clearB
 
   return (
     <div ref={ref} style={{ fontSize }} className={styles.typewriter}>
-      <Keyframes name="typewriter" from={{ left: '0%' }} to={{ left: '100%' }} />
-      <Keyframes name="blink" to={{ backgroundColor: 'transparent' }} />
+      <Keyframes
+        id="strooks.typewriter"
+        name="typewriter"
+        from={{ left: '0%' }}
+        to={{ left: '100%' }}
+      />
+      <Keyframes
+        id="strooks.typewriter.blink"
+        name="blink"
+        to={{ backgroundColor: 'transparent' }}
+      />
       {/* {show ? ( */}
       {show ? (
         <div style={{ position: 'relative' }}>
