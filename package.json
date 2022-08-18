@@ -18,14 +18,12 @@
     "babel-loader": "^8.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rollup": "^2.78.0",
     "storybook-css-modules": "^1.0.8",
     "storybook-css-modules-preset": "^1.1.1"
   },
   "dependencies": {},
   "scripts": {
-    "build": "rollup ./index.js -o dist/index.js",
-    "prebuild": "node ./scripts/generateIndex.mjs",
+    "build": "node ./scripts/generateIndex.mjs",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   }

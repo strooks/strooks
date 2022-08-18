@@ -16,7 +16,7 @@ function generate(sourceDir) {
 
   Object.entries(modulesByType).forEach(([dir, mods]) => {
     mods.forEach(mod => {
-      imports += `import ${mod} from '.src/${dir}/${mod}'\n`
+      imports += `import ${mod} from './src/${dir}/${mod}'\n`
       modules.push(mod)
     })
   })
